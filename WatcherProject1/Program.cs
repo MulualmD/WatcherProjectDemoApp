@@ -74,7 +74,7 @@ namespace WatcherProject1
         {
           
             
-            var solutionFile = @"D:\DemoApp\DemoApp.sln";
+            var solutionFile = @"C:\Users\bani0\source\repos\DemoApp\DemoApp.sln";
             var MSBuild = @"C:\Program Files\Microsoft Visual Studio\2022\Community\Msbuild\Current\Bin\MSBuild.exe";
 
             var processBuild = Process.Start(MSBuild, solutionFile);
@@ -115,7 +115,7 @@ namespace WatcherProject1
         private static async void GetLastPushDateTime()
         {
             var client = new GitHubClient(new ProductHeaderValue("DemoApp"));
-            string owner = "mosmo46";
+            string owner = "MulualmD";
             var repo = "DemoApp";
 
             var commits = await client.Repository.Commit.Get(owner, repo, "HEAD");
@@ -161,8 +161,8 @@ namespace WatcherProject1
         {
             var ghClient = new GitHubClient(new ProductHeaderValue("DemoApp"));
 
-            ghClient.Credentials = new Credentials("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");
-            string owner = "mosmo46";
+            ghClient.Credentials = new Credentials("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");
+            string owner = "MulualmD";
             var repo = "DemoApp";
             var master = "master";
             try
